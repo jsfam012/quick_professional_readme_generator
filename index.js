@@ -8,43 +8,58 @@ const fs = require('fs')
 const questions = [
     {
         type: 'input',
-        message: 'What is the title of this application?',
-        name: 'title'
+        message: 'What is the title of this project?',
+        name: 'Title'
     },
 
     {
         type: 'input',
-        message: 'Please describe your application',
-        name: 'description'
+        message: 'Please describe your project',
+        name: 'Description'
     },
 
     {
         type: 'input',
-        message: 'How can you install this applicaton',
-        name: 'installation'
+        message: 'Do you want to create table of contents',
+        name: 'Table of contents'
     },
 
     {
         type: 'input',
-        message: 'How can I use this application',
-        name: 'usage'
+        message: 'How can users install this applicaton',
+        name: 'Installation'
     },
 
+    {
+        type: 'input',
+        message: 'What is the primary usage of this application',
+        name: 'Usage'
+    },
+
+    {   
+        type: 'input',
+        message: 'What type of license do you want to use',
+        name: 'License'
+    },
+   
     {
         type: 'input',
         message: 'Did anyone contribute to this application',
-        name: 'contribution'
+        name: 'Contribution'
     },
 
     {
         tyep: 'input',
-        message: 'How do you run test',
-        name: 'test'
+        message: 'Any test instructions',
+        name: 'Tests'
+    },
+    
+    {  
+        type: 'input',
+        message: 'How can users ask any questions about this application',
+        name: "Questions"
     },
 
-    {
-        
-    }
 
 
 
