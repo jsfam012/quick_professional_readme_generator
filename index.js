@@ -8,64 +8,58 @@ const fs = require('fs')
 const questions = [
     {
         type: 'input',
-        message: 'What is the title of this project?',
-        name: 'Title'
+        message: 'What is the title of this project',
+        name: 'title'
     },
 
     {
         type: 'input',
         message: 'Please describe your project',
-        name: 'Description'
-    },
-
-    {
-        type: 'input',
-        message: 'Do you want to create table of contents',
-        name: 'Table of contents'
+        name: 'description'
     },
 
     {
         type: 'input',
         message: 'How can users install this applicaton',
-        name: 'Installation'
+        name: 'installation'
     },
 
     {
         type: 'input',
         message: 'What is the primary usage of this application',
-        name: 'Usage'
+        name: 'usage'
     },
 
     {   
-        type: 'input',
+        type: 'list',
         message: 'What type of license do you want to use',
-        name: 'License'
+        name: 'license',
+        choices: ['mit', 'gpl-3.0', 'n/a']
     },
    
     {
         type: 'input',
-        message: 'Did anyone contribute to this application',
-        name: 'Contribution'
+        message: 'How should other developers contribute to this application',
+        name: 'contribution'
     },
 
     {
         tyep: 'input',
         message: 'Any test instructions',
-        name: 'Tests'
+        name: 'tests'
     },
     
     {  
         type: 'input',
-        message: 'How can users ask any questions about this application',
-        name: "Questions"
+        message: 'Enter your email',
+        name: "email"
     },
 
-
-
-
-
-
-
+    {
+        type: 'input',
+        message: 'Enter github user name',
+        name: "github"
+    }
 
 ];
 
@@ -85,6 +79,9 @@ function init() {
 
     inquirer.prompt(questions).then((answersObj) => {
         console.log(answersObj);
+        if(answersObj.license === 'n/a'){
+            answersObj.license = null;
+        }
         const md = generateMarkdown(answersObj);
 
         // Create the Readme file
