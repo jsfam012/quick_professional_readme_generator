@@ -1,9 +1,8 @@
-<<<<<<< HEAD
-# readme
+# readme gen
 
 ## Description
 
-describe
+create readme
 
 ## Table of Content
 
@@ -18,30 +17,25 @@ install
 
 ## Usage
 
-usage
+readme
 
 ## License
 
-![GitHub license](https://img.shields.io/badge/license-license-blue.svg)
-    
-Licensed under the https://license.com license.
+![GitHub license](https://img.shields.io/badge/license-mit-blue.svg)
+
+  Licensed under the https://choosealicense.com/licenses/mit/license.
   
     
 
 ## Contributing
 
-contribute
+well
 
 ## Tests
 
-tests
+none
 
 ## Questions
 
-You can reach me at my email; application
-Or you can find me at github; https://github.com/github
-=======
-# readme_generator
-Homework readme generator
-testing
->>>>>>> cad5a58a8f11d45cfcb1a4731947e15deaeeae25
+You can reach me at my email; sa@testing.com
+Or you can find me at github; https://github.com/sa github
